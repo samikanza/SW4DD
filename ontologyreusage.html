@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>SW4DD</title>
+    <link rel="stylesheet" type="text/css" href="css/chord.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/d3.js"></script>
+    <script src="js/underscore_old.js"></script>
+    <script src="js/mapper.js"></script>
+    <script src="js/chord.js"></script>
+    <script src="js/d3-tip.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        createChord("usageofontologies.csv", "#Chorddiagram");
+      });
+    </script>
+  </head>
+  <body>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="ontologyspreadsheet.html">Ontology Spreadsheet</a></li>
+    <li><a href="ontologyusage.html">Ontology Usage</a></li>
+    <li><a href="ontologyreusage.html">Ontology Re Usage</a></li>
+  </ul>
+    <p>This is an interactive version of Figure 4 in the paper, which demonstrates which ontologies in the shortlisted 34 are re-used by other ontologies in the shortlist.</p>
+    <div id="Chorddiagram"></div>
+  </body>
+</html>

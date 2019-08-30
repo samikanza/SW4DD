@@ -1,0 +1,364 @@
+body{
+    margin:0;
+    color:#222831;
+    font-family:sans-serif;
+}
+
+.main{
+    height:100%;
+    width:100%;
+}
+
+.top_bar{
+    background-color: #222831;
+    color: white;
+    height: 35px;
+    padding-top: 6px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    font-size: 31px;
+}
+
+.left_tab{
+    float:left;
+    width:99px;
+    margin-left:1px;
+    height: calc(100% - 51px);
+}
+
+.right_tab{
+    float:right;
+    width: calc(100% - 100px);
+    height: calc(100% - 51px);
+}
+
+.doc_tab, .ont_tab{
+    width:100%;
+    border: 1px solid #CCCCCC;
+    background-color:white;
+}
+
+.ont_tab{
+    height: 100%;
+    overflow:scroll;
+    padding:10px;
+}
+
+.header_bar{
+    height:20px;
+    margin-bottom:10px;
+}
+
+#search_box{
+    width:200px;
+    margin-left:5px;
+    height:24px;
+}
+
+.header-left{
+    float:left;
+    width:100px;
+}
+
+.header-right{
+    float:right;
+    width: 261px;
+    display: inline;
+}
+
+.tab_type{
+    height: 30px;
+    font-size: 24px;
+    margin-left: 5%;
+    padding-top: 10px;
+}
+
+.document_list{
+    float:left;
+    width:30%;
+    overflow-y:scroll;
+    height: 100%;
+    border-right: 1px solid #CCCCCC;
+    background-color:#EEEEEE;
+}
+
+li.doc_item{
+    list-style-type: none;
+    border-radius: 5px;
+    padding: 10px 5px 0px 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    height: 30px;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+li.doc_item:hover, li.active{
+    background-color: #DDDDDD;
+    cursor:pointer;
+}
+
+ul.doc_list{
+    padding: 0;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.document_display{
+    float:right;
+    width:69%;
+    overflow-y:scroll;
+    height: calc(100% - 30px);
+    width:calc(70% - 1px)
+}
+
+.tab {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.top_tab{
+    overflow: hidden;
+    background-color: #2E2B2B;
+}
+
+.left_tab_links {
+    float: left;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 16px;
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 23px;
+    color: #EEEEEE;
+}
+
+.left_tab_links.odd{
+    background-color:#1A8B9D;
+}
+
+.left_tab_links.even{
+    background-color:#21294C;
+}
+
+.left_tab_links:hover, .left_tab_links.active {
+    background-color: #DDDDDD;
+    color:#2E2B2B;
+}
+
+.hidden{
+    display:none;
+}
+
+.tooltip {
+        position: relative;
+        display: inline;
+      }
+
+  .gate-checkbox{
+      color:#21294C !important;
+      font-weight:bold;
+  }
+
+  .chemTagger-checkbox{
+      color: #4E3188;
+      font-weight:bold;
+  }
+
+  .ontology-checkbox{
+     color:#0092CA !important;
+      font-weight:bold;
+  }
+
+  .osc4r-checkbox{
+      color:#1A8B9D !important;
+      font-weight:bold;
+  }
+
+  .gate-tooltip-color{
+      color:#21294C !important;
+      font-weight:bold;
+      cursor:pointer !important;
+  }
+
+  .chemTagger-tooltip-color{
+      color: #4E3188;
+      font-weight:bold;
+      cursor:pointer !important;
+  }
+
+  .ontology-tooltip-color{
+      color:#0092CA !important;
+      font-weight:bold;
+      cursor:pointer !important;
+  }
+
+  .osc4r-tooltip-color{
+      color:#1A8B9D !important;
+      font-weight:bold;
+      cursor:pointer !important;
+  }
+
+
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -150px;
+    opacity: 0;
+    transition: opacity 1s;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    opacity: 1;
+}
+
+  .document{
+      border: 2px solid #000;
+      box-shadow: 0 0 10px #000 width: 98%;
+      height: auto;
+      min-height: 30px;
+      margin: 10px 10px 10px 0px;
+      padding: 5px;
+      display:inline-block;
+      width:99%;
+  }
+
+  .document_title{
+      cursor:pointer;
+  }
+
+  .document_details{
+      display:none;
+  }
+
+  .document_markup {
+      width: 20%;
+      float: right;
+  }
+
+  .tab_content{
+      padding:10px;
+  }
+
+  .document_sections{
+      float:left;
+  }
+
+  .document_sections.full_width{
+      width:100%;
+  }
+
+  .document_sections.partial_width{
+      width:80%;
+  }
+
+  .document_section{
+      margin-bottom:10px;
+  }
+
+#search-btn{
+    margin-bottom: 10px;
+    background-color: #222831;
+    color: white;
+    border-radius: 5px;
+    margin-left: 1px;
+    float:right;
+    height:25px;
+    width:110px;
+}
+
+#search-text{
+    float: left;
+    height: 25px;
+    width: calc(100% - 115px);
+}
+
+.search-div{
+    width: 90%;
+    margin-left: 5%;
+    height: 20px;
+    margin-top: 5px;
+}
+
+
+/** BAR CHART **/
+.axis--x path {
+    display: none;
+}
+
+.bar {
+    fill: #1A8B9D;
+}
+
+.axis {
+    font-size: 13px;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    display: none;
+}
+
+.label {
+    font-size: 13px;
+}
+
+.superHidden{
+    visibility: hidden !important;
+}
+
+.no-results, .search-info{
+    display:none;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+    padding-left: 1px;
+    font-size:12px;
+    padding-bottom: 5px;
+}
+
+.no-results{
+    color:red;
+}
+
+.no-results-box{
+    border-color:red;
+}
+
+#up-arrow{
+    float: right;
+    margin-top: 0px;
+    width: 20px;
+    cursor:pointer;
+}
+
+span#header_cat{
+    font-family: 'Cat-Font';
+    font-color:white;
+}
+
+@font-face {
+    font-family: 'Cat-Font';
+    src:url('../font/Cat-Font.ttf.woff') format('woff'),
+    url('../font/Cat-Font.ttf.svg#Cat-Font') format('svg'),
+    url('../font/Cat-Font.ttf.eot'),
+    url('../font/Cat-Font.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
